@@ -1,0 +1,10 @@
+===========================
+Reference
+===========================
+1. For some titles (like "In Battle!") there may be
+several in the language file. In such cases, use the second input field with the name "cnt".
+When you save your title, the titles will be replaced the specified number of times.
+
+===========================
+2. If the changes do not apply in the game, enable user localization in the application settings,
+log in to the game, exit it and change the names in the application, and then go in again to see changes

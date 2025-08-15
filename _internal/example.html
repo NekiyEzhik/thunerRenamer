@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <script src="example.js"></script>
+        <title>vvv</title>
+        <style>
+            
+            @keyframes fade-in{
+                from {
+                    opacity: 100%;
+                }
+                50%{
+                    opacity: 0%;
+                }
+                to {
+                    opacity: 100%;
+                }
+            }
+            @-webkit-keyframes slide-in-left {
+            0% {
+                -webkit-transform: translateY(1000px);
+                        transform: translateY(1000px);
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                opacity: 1;
+            }
+            }
+            @keyframes slide-in-left {
+                0% {
+                    -webkit-transform: translateY(1000px);
+                            transform: translateY(1000px);
+                    opacity: 0;
+                }
+                100% {
+                    -webkit-transform: translateY(0);
+                            transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            body{
+                background-image: url(https://i.pinimg.com/originals/8b/f7/2a/8bf72a588566e24846be0d9264c9cae7.jpg);
+                background-size: 100%;
+
+            }
+            a{
+                text-decoration:none;
+            }
+            .item{
+                background-color: rgba(240, 255, 255, 0.288);
+                width: 1000px;
+                height: 800px;
+                border-radius: 10px;
+                padding: 1px;
+            }
+            .par{
+                font-size: 70px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                text-align: cenetr;
+                color: white;
+                width: 1000px;
+            }
+            .family{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .span{
+                border-radius: 10px;
+            }
+            p.par{
+                transition: 0.3s;
+            }
+            p.trans p.par:hover{
+                white-space: nowrap;
+                padding: 5px;
+                border-radius: 2px;
+                height: 90px;
+                
+            }
+            p.project{
+                rotate: 2deg;
+            }
+            p.big{
+                font-size: 150px;
+                background: linear-gradient(
+                    #2E9AFF 0%,
+                    #41a785 100%
+                );
+                border-radius: 30px;
+                width: 170px;
+                height: 180px;
+                color: rgb(255, 255, 255);
+            }
+            p.author{
+                rotate: -2deg;
+            }
+            p.project:hover{
+                background-color: #2E9AFF;
+                transform: rotate(-5deg) scale(1.1);
+                width: 380px;
+            }
+            p.author:hover{
+                background-color: #41a785;
+                transform: rotate(5deg) scale(1.1);
+                width: 230px;
+            }
+
+            p.anim:hover{
+                text-align: left;
+                padding-left: 200px;
+                width: 560px;
+                height: 180px;
+                background-color: #2E9AFF;
+                border-radius: 30px;
+                cursor:default;     
+            }
+            p.div-par{
+                font-size: 150px;
+                transition: 0.2s;
+                background: linear-gradient(
+                    #2E9AFF 0%,
+                    #41a785 100%
+                    );
+                    border-radius: 30px;
+                    width: 170px;
+                    height: 180px;
+                    color: rgb(255, 255, 255);
+                    margin-top: 30px;
+                    margin-left: 30px;
+                }
+            p.div-par:hover{
+                padding-left: 30px;
+                text-align: left;
+                width: 330px;
+                height: 180px;
+                border-radius: 30px;
+                cursor:default;    
+            }
+            p.div-par{
+                text-align: center;
+            } 
+            p.div-par:hover:after{
+                visibility: visible;
+                position: absolute;
+                text-align: left;
+                content: "LAD";
+            } 
+            p.par-p{
+                opacity: 0%;
+            }
+            p.par-p:hover{
+                opacity: 100%;
+            }
+            .menu{
+                display: flex;
+                width: 500px;
+                height: 200px;
+                border: 2px solid #2E9AFF;
+                background-color: #2e9aff1a;
+                border-radius: 10px;
+            }
+            #menu {
+                display: none;
+            }
+            .slide-in-left{
+                -webkit-animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s ;
+	                    animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s ;
+            }
+            .menNu{
+                margin: 15px;
+                color: white;
+                font-size: 30px;
+                transition: 0.7s;
+                width: 200px;
+                height: 40px;
+                border-radius: 30px;
+            }
+            .menNu:hover{
+                width: 200px;
+                height: 40px;
+                background-color: #2E9AFF;
+                border-radius: 30px;
+                cursor:default;  
+            }
+            
+        </style>
+    </head>
+    <body>
+        <center><div class="item">
+            <div align='left', class="second-div family">
+                <p class="div-par second-div">V</p>
+                <p class="second-div"></p>
+            </div>
+            <center><div class="">
+                <!-- <p class="anim family">Анимация</p> -->
+                <a href="#", onclick="openmenu()">
+                    <p class="par trans project"><span class="span par family">Менюшка<br></span></p>
+                </a>
+                <a href="https://t.me/c_init_c">
+                    <p class="par trans author"><span class="span par family">Автор<br></span></p>
+                </a>
+            </div></center>
+            <div class="menu slide-in-left" id="menu">
+                <nav>
+                    <a href="https://t.me/Vspaceandkiberbot">
+                        <p class="menNu"><span class="family">Тг Бот<br></span></p>
+                    </a>
+                    <a href="#">
+                        <p class="menNu"><span class="family">Действие 2<br></span></p>
+                    </a>
+                    <a href="" onclick="">
+                        <p class="menNu"><span class="family">Отмена<br></span></p>
+                    </a>
+                </nav>
+            </div>
+        </div></center>
+    </body>
+</html>
